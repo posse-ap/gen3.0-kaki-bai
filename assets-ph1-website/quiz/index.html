@@ -10,79 +10,286 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <div class="logo_header"><img src="../img/logo.svg" alt="logo"></div>
-    <div class="frame5">
-      <nav class="about"><a href="../index.html" class="header_text">POSSEとは</a></nav>
-      <nav class="quiz"><a href="./index.html" class="header_text">クイズ</a></nav>
-      <nav class="twitter_header"><a href="#"><img src="../img/icon/icon-twitter.svg" alt="twitter"></a></nav>
-      <nav class="ins_header"><a href="#"><img src="../img/icon/icon-instagram.svg" alt="instagram"></a></nav>
+    <div class="header_logo"><img src="../img/logo.svg" alt="logo"></div>
+    <div class="header_nav_frame">
+      <nav class="header_nav_about"><a href="./index.html" class="header_text">POSSEとは</a></nav>
+      <nav class="header_nav_quiz"><a href="./quiz/index.html" class="header_text">クイズ</a></nav>
+      <nav class="header_nav_twitter"><a href="https://twitter.com/posse_program"><img src="../img/icon/icon-twitter.svg" alt="twitter"></a></nav>
+      <nav class="header_nav_ins"><a href="https://www.instagram.com/posse_programming/"><img src="../img/icon/icon-instagram.svg" alt="instagram"></a></nav>
     </div>
   </header>
 
   <main>
-    <div class="main_top_background">
-      <p class="top_text1">POSSE課題</p>
-      <h1 class="top_text2">ITクイズ</h1>
-    </div>
-    <!-- <div class="main_Quiz">
-      <div class="main_Q1">
-        <div class="Q1_icon_Q"></div>
-        <p class="Q1_question">日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</p>
-        <div class="Q1_img"></div>
-        <div class="Q1_icon_A"></div>
-        <div class="Q1_form">
+    <section class="main_top">
+      <div class="main_top_title">
+        <p class="main_top_text1">POSSE課題</p>
+        <h1 class="main_top_text2">ITクイズ</h1>
+      </div>
+    </section>
+    <div class="main_quiz">
+      <section class="main_Q1 js-quiz" data-quiz="0">
+        <div class="main_Q">
+          <div class="main_Q_icon">
+            <p>Q1</p>
+          </div>
+          <p class="main_Q_question">日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</p>
+          <div class="main_Q_img"><img src="../img/quiz/img-quiz01.png" alt="quiz01"></div>
         </div>
-      </div> -->
+        <div class="main_Q_A">
+          <div class="main_A_icon">
+            <p>A</p>
+          </div>
+          <ul class="main_A_list">
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="0">約28万人</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="1">約79万人</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="2">約183万人</button>
+            </li>
+          </ul>
+          <div class="main_A_correct js-answerBox">
+            <p class="main_A_correct_title js-answerTitle"></p>
+            <p class="main_A_correct_content">
+              <span class="main_A_correct_content_label js-answerLable"></span>
+              <span class="js-answerText"></span>
+            </p>
+          </div>
+        </div>
+        <div class="main_note">
+          <i class="main_note_icon"></i>
+          <p class="main_note_text">経済産業省 2019年3月 － IT 人材需給に関する調査</p>
+        </div>
+      </section>
+      <section class="main_Q2 js-quiz" data-quiz="1">
+        <div class="main_Q">
+          <div class="main_Q_icon">
+            <p>Q2</p>
+          </div>
+          <p class="main_Q_question">既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？</p>
+          <div class="main_Q_img"><img src="../img/quiz/img-quiz02.png" alt="quiz02"></div>
+        </div>
+        <div class="main_Q_A">
+          <div class="main_A_icon">
+            <p>A</p>
+          </div>
+          <ul class="main_A_list">
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="0">INTECH</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="1">BIZZTECH</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="2">X-TECH</button>
+            </li>
+          </ul>
+          <div class="main_A_correct js-answerBox">
+            <p class="main_A_correct_title js-answerTitle"></p>
+            <p class="main_A_correct_content">
+              <span class="main_A_correct_content_label js-answerLable"></span>
+              <span class="js-answerText"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main_Q3 js-quiz" data-quiz="2">
+        <div class="main_Q">
+          <div class="main_Q_icon">
+            <p>Q3</p>
+          </div>
+          <p class="main_Q_question">IoTとは何の略でしょう？</p>
+          <div class="main_Q_img"><img src="../img/quiz/img-quiz03.png" alt="quiz03"></div>
+        </div>
+        <div class="main_Q_A">
+          <div class="main_A_icon">
+            <p>A</p>
+          </div>
+          <ul class="main_A_list">
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="0">Internet of Things</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="1">Integrate into Technology</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="2">Information on Tool</button>
+            </li>
+          </ul>
+          <div class="main_A_correct js-answerBox">
+            <p class="main_A_correct_title js-answerTitle"></p>
+            <p class="main_A_correct_content">
+              <span class="main_A_correct_content_label js-answerLable"></span>
+              <span class="js-answerText"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main_Q4 js-quiz" data-quiz="3">
+        <div class="main_Q">
+          <div class="main_Q_icon">
+            <p>Q4</p>
+          </div>
+          <p class="main_Q_question">日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？</p>
+          <div class="main_Q_img"><img src="../img/quiz/img-quiz04.png" alt="quiz04"></div>
+        </div>
+        <div class="main_Q_A">
+          <div class="main_A_icon">
+            <p>A</p>
+          </div>
+          <ul class="main_A_list">
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="0">Society 5.0</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="1">CyPhy</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="2">SDGs</button>
+            </li>
+          </ul>
+          <div class="main_A_correct js-answerBox">
+            <p class="main_A_correct_title js-answerTitle"></p>
+            <p class="main_A_correct_content">
+              <span class="main_A_correct_content_label js-answerLable"></span>
+              <span class="js-answerText"></span>
+            </p>
+          </div>
+        </div>
+        <div class="main_note">
+          <i class="main_note_icon"></i>
+          <p class="main_note_text">Society5.0 - 科学技術政策 - 内閣府</p>
+        </div>
+      </section>
+      <section class="main_Q5 js-quiz" data-quiz="4">
+        <div class="main_Q">
+          <div class="main_Q_icon">
+            <p>Q5</p>
+          </div>
+          <p class="main_Q_question">イギリスのコンピューター科学者であるギャビン・ウッド氏が提唱した、ブロックチェーン技術を活用した「次世代分散型インターネット」のことをなんと言うでしょう？</p>
+          <div class="main_Q_img"><img src="../img/quiz/img-quiz05.png" alt="quiz05"></div>
+        </div>
+        <div class="main_Q_A">
+          <div class="main_A_icon">
+            <p>A</p>
+          </div>
+          <ul class="main_A_list">
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="0">Web3.0</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="1">NFT</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="2">メンバース</button>
+            </li>
+          </ul>
+          <div class="main_A_correct js-answerBox">
+            <p class="main_A_correct_title js-answerTitle"></p>
+            <p class="main_A_correct_content">
+              <span class="main_A_correct_content_label js-answerLable"></span>
+              <span class="js-answerText"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main_Q6 js-quiz" data-quiz="5">
+        <div class="main_Q">
+          <div class="main_Q_icon">
+            <p>Q6</p>
+          </div>
+          <p class="main_Q_question">先進テクノロジー活用企業と出遅れた企業の収益性の差はどれくらいあると言われているでしょうか？</p>
+          <div class="main_Q_img"><img src="../img/quiz/img-quiz06.png" alt="quiz06"></div>
+        </div>
+        <div class="main_Q_A">
+          <div class="main_A_icon">
+            <p>A</p>
+          </div>
+          <ul class="main_A_list">
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="0">約2倍</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="1">約5倍</button>
+            </li>
+            <li class="main_A_item">
+              <button class="main_A_button js-answer" data-answer="2">約11倍</button>
+            </li>
+          </ul>
+          <div class="main_A_correct js-answerBox">
+            <p class="main_A_correct_title js-answerTitle"></p>
+            <p class="main_A_correct_content">
+              <span class="main_A_correct_content_label js-answerLable"></span>
+              <span class="js-answerText"></span>
+            </p>
+          </div>
+        </div>
+        <div class="main_note">
+          <i class="main_note_icon"></i>
+          <p class="main_note_text">Accenture Technology Vision 2021</p>
+        </div>
+      </section>
     </div>
 
-    <div class="line">
-      <div class="line_frame"></div>
-      <div class="line_inner">
-        <div class="title_line">
-          <div class="line_img"><img src="../img/icon/icon-line.svg" alt="line"></div>
-          <div class="line_title_text">POSSE 公式LINE</div>
+    <div class="main_line">
+      <div class="main_line_frame"></div>
+      <div class="main_line_inner">
+        <div class="main_title_line">
+          <div class="main_line_img"><img src="../img/icon/icon-line.png" alt="line"></div>
+          <div class="main_line_title_text">POSSE 公式LINE</div>
         </div>
-        <div class="line_main_text">
+        <div class="main_line_main_text">
           公式LINEにてご質問を随時受け付けております。<br>詳細やPOSSE最新情報につきましては、公式LINEにてお知らせ致しますので<br>下記ボタンより友達追加をお願いします！</div>
-        <div class="line_button_frame">
-          <a href="#" class="line_link">
-            <nav class="line_button">
-              <div class="line_button_text">LINE追加</div>
-              <div class="line_button_img"><img src="../img/icon/icon-link-dark.svg" alt="link-dark"></div>
+        <div class="main_line_button_frame">
+          <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="main_line_link">
+            <nav class="main_line_button">
+              <div class="main_line_button_text">LINE追加</div>
+              <div class="main_line_button_img"><img src="../img/icon/icon-link-dark.svg" alt="link-dark"></div>
             </nav>
           </a>
         </div>
       </div>
     </div>
+
+    <nav class="line_fixed">
+      <a href="https://line.me/R/ti/p/@651htnqp?from=page">
+        <div class="line_fixed_logo"><img src="../img/icon/icon-line.svg" alt="line-logo"></div>
+        <div class="line_fixed_white"></div>
+        <p class="line_fixed_text">POSSE公式LINEで最新情報をGET!</p>
+        <div class="line_fixed_icon"><img src="../img/icon/icon-link-light.svg" alt="link-light"></div>
+      </a>
+    </nav>
   </main>
 
   <footer>
     <div class="footerInner">
-      <div class="line1"></div>
-      <div class="logo_footer"><img src="../img/logo.svg" alt="logo"></div>
-      <nav class="link_footer">
+      <div class="footer_line1"></div>
+      <div class="footer_logo"><img src="../img/logo.svg" alt="logo"></div>
+      <nav class="footer_link">
         <a class="footer_text" href="#">POSSE公式サイト</a>
-        <a class="link_img" href="#">
+        <a class="footer_link_img" href="#">
           <img src="../img/icon/icon-link-gray-dark.svg" alt="link-gray-dark">
         </a>
       </nav>
-      <nav class="SNS_footer">
-        <div class="twitter_footer"><a href="#"><img src="../img/icon/icon-twitter.svg" alt="twitter"></a></div>
-        <div class="ins_footer"><a href="#"><img src="../img/icon/icon-instagram.svg" alt="instagram"></a></div>
+      <nav class="footer_SNS">
+        <div class="footer_twitter"><a href="#"><img src="../img/icon/icon-twitter.svg" alt="twitter"></a></div>
+        <div class="footer_ins"><a href="#"><img src="../img/icon/icon-instagram.svg" alt="instagram"></a></div>
       </nav>
-      <div class="line2"></div>
+      <div class="footer_line2"></div>
       <small>
-        <div class="small_text">&copy; 2020 POSSE</div>
+        <div class="footer_small_text">&copy; 2020 POSSE</div>
       </small>
     </div>
 
   </footer>
+  <script src="../scripts/quiz.js"></script>
 </body>
 
 </html>
