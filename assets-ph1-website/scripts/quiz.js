@@ -53,7 +53,6 @@
 
     answers.forEach(answer => {
       answer.addEventListener('click', () => {
-        
         answer.classList.add('is-selected');
         const selectedAnswer = Number(answer.getAttribute('data-answer'));
 
