@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 {
   const quizSet = [
     {
@@ -54,7 +54,9 @@
   const Quiz = document.getElementById("js-quiz");
   const main_A_correct = document.getElementsByClassName("main_A_correct");
   const main_A_button = document.getElementsByClassName("main_A_button");
-  const main_A_correct_content_text = document.getElementsByClassName("main_A_correct_content_text");
+  const main_A_correct_content_text = document.getElementsByClassName(
+    "main_A_correct_content_text"
+  );
 
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -195,7 +197,9 @@
       for (let i = 3 * index; i <= 3 * index + 2; i++) {
         main_A_button[i].addEventListener("click", () => {
           if (
-            main_A_button[i].parentNode.parentNode.classList.contains("disabled")
+            main_A_button[i].parentNode.parentNode.classList.contains(
+              "disabled"
+            )
           ) {
             return;
           }
@@ -206,7 +210,6 @@
           main_A_correct_content_text[index].textContent = quiz.choices[0];
         });
       }
-
     });
   }
 
