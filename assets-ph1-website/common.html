@@ -17,15 +17,32 @@
 <body>
   <header>
     <div class="header_logo"><img src="./img/logo.svg" alt="logo"></div>
-    <nav class="header_nav_frame">
+    <nav class="header_nav_frame_pc">
       <li class="header_nav_about"><a href="./toppage.html" class="header_text">POSSEとは</a></li>
       <li class="header_nav_quiz"><a href="./quiz.html" class="header_text">クイズ</a></li>
       <li class="header_nav_twitter"><a href="#"><img src="./img/icon/icon-twitter.svg" alt="twitter"></a></li>
       <li class="header_nav_ins"><a href="#"><img src="./img/icon/icon-instagram.svg" alt="instagram"></a></li>
     </nav>
+    <nav class="header_nav_frame_mobile" id="js-header-btn">
+      <div class="header_nav_btn">
+        <div class="header_nav_btn_line"></div>
+      </div>
+    </nav>
   </header>
 
-  <main>
+  <main id="js-main">
+    <nav class="main_nav_menu_mobile to-be-removed" id="js-menu">
+      <li><a href="#">POSSEとは</a></li>
+      <li><a href="./quiz/index.html">クイズ</a></li>
+      <nav class="main_nav_menu_line">
+        <a href="https://line.me/R/ti/p/@651htnqp?from=page">
+          <div class="main_nav_menu_line_logo"><img src="./img/icon/icon-line.svg" alt="line-logo"></div>
+          <div class="main_nav_menu_line_white"></div>
+          <p class="main_nav_menu_line_text">POSSE公式LINE追加</p>
+          <div class="main_nav_menu_line_icon"><img src="./img/icon/icon-link-light.svg" alt="link-light"></div>
+        </a>
+      </nav>
+    </nav>
     <div class="main_line">
       <div class="main_line_frame"></div>
       <div class="main_line_inner">
@@ -49,8 +66,8 @@
 
   <footer>
     <div class="footerInner">
-      <div class="footer_line1"></div>
-      <div class="footer_logo"><img src="./img/logo.svg"></div>
+      <div class="footer_line"></div>
+      <div class="footer_logo" id="js-footer-logo"><img src="./img/logo.svg"></div>
       <nav class="footer_link">
         <a class="footer_text" href="#">POSSE公式サイト</a>
         <a class="footer_link_img" href="#">
@@ -61,13 +78,13 @@
         <div class="footer_twitter"><a href="#"><img src="./img/icon/icon-twitter.svg" alt="twitter"></a></div>
         <div class="footer_ins"><a href="#"><img src="./img/icon/icon-instagram.svg" alt="instagram"></a></div>
       </nav>
-      <div class="footer_line2"></div>
-      <small>
+      <div class="footer_line"></div>
+      <small id="js-footer-small">
         <div class="footer_small_text">&copy; 2020 POSSE</div>
       </small>
     </div>
-
   </footer>
+  <script src="./scripts/common.js"></script>
 </body>
 
 </html>
